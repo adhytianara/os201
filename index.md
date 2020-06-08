@@ -6,7 +6,7 @@ Muhamad Adhytia Wana Putra Rahmadhan
 1806141321
 OS C
 
-<img src="https://github.com/adhytianara/hello/blob/master/Quanta.jpg?raw=true" width="256">
+<img src="https://github.com/adhytianara/os201/blob/master/quanta.jpg?raw=true" width="1000">
 
 ### [Kumpulan URL](URLs/)
 
