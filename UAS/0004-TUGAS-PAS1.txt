@@ -1,0 +1,37 @@
+Script started on Mon 08 Jun 2020 06:37:17 PM WIB
+muhamad.adhytia@badak:~/UAS$ PS1="$ "
+$ echo $GitHubUser
+adhytianara
+$ echo $PSTAMP
+TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(echo $TMP1-$GitHubUser-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
+$ eval $PSTAMP
+200608-183734-a5d3-UAS/>
+$ PS1="\$(eval \$PSTAMP)"
+200608-183738-abbe-UAS/> echo -e $CEKSAYA
+adhytianara ZCZCSCRIPTSTART 200608-125733 adhytianara
+ adhytianara adhytianara 200608-125754-39ef-UAS/ 200608-125754 SEQOK SUMOK 39efa335
+ adhytianara adhytianara 200608-125804-8dc1-UAS/ 200608-125804 SEQOK SUMOK 8dc1325a
+ adhytianara adhytianara 200608-125816-1a7d-UAS/ 200608-125816 SEQOK SUMOK 1a7def85
+ adhytianara adhytianara 200608-125822-a232-UAS/ 200608-125822 SEQOK SUMOK a23268d7
+ adhytianara ZCZCSCRIPTSTOP 200608-125830 SEQOK
+
+200608-183742-5921-UAS/> echo -e $CEKSEBELA1
+adhytianara ZCZCSCRIPTSTART 200603-092254 aditmuhmd
+ adhytianara aditmuhmd 200603-092254-abcd-muhammad.aditya81/ 200603-092254 SEQOK SUMOK abcd2b69
+ adhytianara aditmuhmd 200603-092300-ae4d-muhammad.aditya81/ 200603-092300 SEQOK SUMOK ae4d3c98
+ adhytianara aditmuhmd 200603-092313-2574-muhammad.aditya81/ 200603-092313 SEQOK SUMOK 25743cdc
+ adhytianara aditmuhmd 200603-092328-0ed3-muhammad.aditya81/ 200603-092328 SEQOK SUMOK 0ed35f5d
+ adhytianara ZCZCSCRIPTSTOP 200603-092333 SEQOK
+
+200608-183751-d002-UAS/> echo -e $CEKSEBELA2
+adhytianara ZCZCSCRIPTSTART 200604-211016 adrielananta
+ adhytianara adrielananta 200604-211106-f17e-adriel.gian/ 200604-211106 SEQOK SUMOK f17e868d
+ adhytianara adrielananta 200604-211118-1d2f-adriel.gian/ 200604-211118 SEQOK SUMOK 1d2f8494
+ adhytianara adrielananta 200604-211213-9b46-adriel.gian/ 200604-211213 SEQOK SUMOK 9b461ccf
+ adhytianara adrielananta 200604-211226-1b3c-adriel.gian/ 200604-211226 SEQOK SUMOK 1b3c3ff0
+ adhytianara ZCZCSCRIPTSTOP 200604-211242 SEQOK
+
+200608-183757-ec40-UAS/> exit
+exit
+
+Script done on Mon 08 Jun 2020 06:38:01 PM WIB
