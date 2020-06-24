@@ -1,31 +1,28 @@
-Script started on Wed 24 Jun 2020 12:10:08 AM WIB
+Script started on Mon 08 Jun 2020 01:45:43 PM WIB
 ]0;muhamad.adhytia@badak: ~/UASmuhamad.adhytia@badak:~/UAS$ PS1="$ "
-$ echo "$akunGitHub"
+$ echo $GitHubUser
 adhytianara
-$ date
-Wed Jun 24 00:10:20 WIB 2020
 $ echo $PSTAMP
-TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(sleep 1;echo $TMP1-$akunGitHub-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
+TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(echo $TMP1-$GitHubUser-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
 $ PS1="\$(eval \$PSTAMP)"
-200624-001030-9687-UAS/> date
-Wed Jun 24 00:10:35 WIB 2020
-200624-001035-21aa-UAS/> ls -F
+200608-134622-014f-UAS/> ls -F
 0000-mypub.txt  0001-mytest.txt  0002-mytest.txt.asc  0003-CEK-PAS0.txt
-200624-001042-f3f1-UAS/> sha1sum 000[0-2]* > SHA1SUM
-200624-001057-579b-UAS/> sha1sum -c SHA1SUM
+200608-134628-7064-UAS/>  sha1sum 0000-mypub.txt 0001-mytest.txt 0002-mytest.txt.asc  > SHA1SUM
+200608-134642-3275-UAS/> sha1sum -c SHA1SUM 
 0000-mypub.txt: OK
 0001-mytest.txt: OK
 0002-mytest.txt.asc: OK
-200624-001103-6308-UAS/> gpg2 -sb -a SHA1SUM
+200608-134647-b7aa-UAS/> gpg2 -sb -a SHA1SUM 
 
 You need a passphrase to unlock the secret key for
 user: "Muhamad Adhytia Wana Putra Rahmadhan <adit.14.12.99@gmail.com>"
 4096-bit RSA key, ID A3782B6C, created 2020-06-08
 
-[?1049h[1;29r(B[m[4l[?7h[?1h=[39;49m[39;49m[H[2J(B[m[10;64H(0[0mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk(B(B[m[11;64H(0[0mx(B[0m Please enter the passphrase to unlock the secret key for the OpenPGP certificate:  (0[0mx(B(B[m[12;64H(0[0mx(B[0m "Muhamad Adhytia Wana Putra Rahmadhan <adit.14.12.99@gmail.com>"[12;149H(0[0mx(B(B[m[13;64H(0[0mx(B[0m 4096-bit RSA key, ID A3782B6C,[13;149H(0[0mx(B(B[m[14;64H(0[0mx(B[0m created 2020-06-08.[14;149H(0[0mx(B(B[m[15;64H(0[0mx(B(B[m[15;149H(0[0mx(B(B[m[16;64H(0[0mx(B(B[m[16;149H(0[0mx(B(B[m[17;64H(0[0mx(B[0m Passphrase _______________________________________________________________________ (0[0mx(B(B[m[18;64H(0[0mx(B(B[m[18;149H(0[0mx(B(B[m[19;64H(0[0mx(B(B[m[19;77H(0[0m(B[0m<OK>[19;131H<Cancel>[19;149H(0[0mx(B(B[m[20;64H(0[0mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj(B(B[m[17;77H(0[0m(B(B[m*(B[m*(B[m*(B[m*(B[m*(B[m*(B[m*(B[m*(B[m*(B[m*(B[m[29;1H[?1049l[?1l>200624-001117-3ad1-UAS/> gpg2 --verify SHA1SUM.asc SHA1SUM
-gpg: Signature made Wed 24 Jun 2020 12:11:17 AM WIB using RSA key ID A3782B6C
+[?1049h[1;41r(B[m[4l[?7h[?1h=[39;49m[39;49m[H[2J(B[m[15;6H(0[0mlqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk(B(B[m[16;6H(0[0mx(B[0m Please enter the passphrase to unlock the secret key for the OpenPGP  (0[0mx(B(B[m[17;6H(0[0mx(B[0m certificate:[78G(0[0mx(B(B[m[18;6H(0[0mx(B[0m "Muhamad Adhytia Wana Putra Rahmadhan <adit.14.12.99@gmail.com>"[78G(0[0mx(B(B[m[19;6H(0[0mx(B[0m 4096-bit RSA key, ID A3782B6C,[78G(0[0mx(B(B[m[20;6H(0[0mx(B[0m created 2020-06-08.[78G(0[0mx(B(B[m[21;6H(0[0mx(B(B[m[78G(0[0mx(B(B[m[22;6H(0[0mx(B(B[m[78G(0[0mx(B(B[m[23;6H(0[0mx(B[0m Passphrase __________________________________________________________ (0[0mx(B(B[m[24;6H(0[0mx(B(B[m[78G(0[0mx(B(B[m[25;6H(0[0mx(B(B[m[25;17H(0[0m(B[0m<OK>[25;62H<Cancel>[78G(0[0mx(B(B[m[26;6H(0[0mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj(B(B[m[23;19H(0[0m(B(B[m*(B[m*(B[m*(B[m*(B[m*(B[m*(B[m*(B[m*(B[m*(B[m*(B[m[41;1H[?1049l[?1l>200608-134738-7607-UAS/> gpg2 --verify SHA1SUM.asc 
+gpg: assuming signed data in 'SHA1SUM'
+gpg: Signature made Mon 08 Jun 2020 01:47:38 PM WIB using RSA key ID A3782B6C
 gpg: Good signature from "Muhamad Adhytia Wana Putra Rahmadhan <adit.14.12.99@gmail.com>" [ultimate]
-200624-001125-e28d-UAS/> exit
+200608-134746-010e-UAS/> exit
 exit
 
-Script done on Wed 24 Jun 2020 12:11:32 AM WIB
+Script done on Mon 08 Jun 2020 01:47:56 PM WIB
